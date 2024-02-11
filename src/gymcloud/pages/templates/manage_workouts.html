@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     
 
-    <link rel="stylesheet" type="text/css" href="{% static 'gymcloud/home.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'gymcloud/main.css' %}">
     <title>List workouts</title>
 </head>
 <body>
@@ -27,6 +27,8 @@
                 <div class="collapse navbar-collapse" id="navbarToggle">
                     <div class="navbar-nav mr-auto">
                         <a class="nav-item nav-link" href="{% url 'gymcloud-home' %}">Home</a>
+                        <a class="nav-item nav-link" href="{% url 'gymcloud-list-workouts' %}">Workouts</a>
+                        <a class="nav-item nav-link current" href="{% url 'gymcloud-manage-workouts' %}">Manage workouts</a>
                         <a class="nav-item nav-link" href="{% url 'gymcloud-setings' %}">Setings</a>
                     </div>
                     <!-- Navbar Right Side -->
@@ -46,11 +48,10 @@
             </div>
             <div class="col-md-4">
                 <div class="content-section">
-                    <h5>List and manage and workouts.</h5>
+                    <h5></h5>
                     <p class="text-muted">
                     <ul class="list-group">
-                        <li class="list-group-item list-group-item-light"><a href="{% url 'gymcloud-list-workouts' %}">Workouts</li></a>
-                        <li class="list-group-item list-group-item-light"><a href="{% url 'gymcloud-manage-workouts' %}">Manage workouts</li></a>
+                        
                     </ul>
                     </p>
                 </div>
