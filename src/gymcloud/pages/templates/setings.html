@@ -1,9 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,13 +11,10 @@
 
     <meta charset="UTF-8">
     
-    <!--nav-bar-css-->
+
     <link rel="stylesheet" type="text/css" href="{% static 'gymcloud/home.css' %}">
-
-    <title>Home</title>
-
+    <title>Acount setings</title>
 </head>
-
 <body>
     <header class="site-header">
         <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
@@ -44,6 +39,7 @@
         </nav>
     </header>
 
+
     <main role="'main" class="container">
         <div class="row">
             <div class="col-md-8">
@@ -53,14 +49,15 @@
                     <h5>List and manage and workouts.</h5>
                     <p class="text-muted">
                     <ul class="list-group">
-                        <li class="list-group-item list-group-item-light"><a href="{% url 'gymcloud-list-workouts' %}">Workouts</li></a>
-                        <li class="list-group-item list-group-item-light"><a href="{% url 'gymcloud-manage-workouts' %}">Manage workouts</li></a>
+                        <li class="list-group-item list-group-item-light">Workouts</li>
+                        <li class="list-group-item list-group-item-light">Manage workouts</li>
                     </ul>
                     </p>
                 </div>
             </div>
         </div>
     </main>
+
 
 
     <!-- Optional JavaScript -->
@@ -75,5 +72,4 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
