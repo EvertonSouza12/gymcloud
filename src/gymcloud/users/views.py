@@ -17,7 +17,7 @@ class register(UserCreationForm):
     
         class Meta:
             model = user
-            fields = ['first_name','second_name','age', 'email', 'password']
+            fields = ['username', 'first_name','second_name','age', 'email', 'password']
     
     
 def register_user(request):
