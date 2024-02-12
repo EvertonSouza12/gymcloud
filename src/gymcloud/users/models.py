@@ -8,4 +8,4 @@ class user(models.Model):
     second_name = models.CharField(max_length=100)
     age = models.IntegerField()
     email = models.EmailField()
-    password = models.CharField()
+    password = models.CharField(max_length=20)
