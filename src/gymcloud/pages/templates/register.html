@@ -47,20 +47,10 @@
     </header>
 
     <div class="form-register">
-        <form action="" method="post">
-            <label for="your_username">Username</label>
-            <input required id="your_name" type="text">
-            <label for="your_name">First name</label>
-            <input required id="your_name" type="text">
-            <label for="second_name">Second name</label>
-            <input required id="second_name" type="text">
-            <label for="your_age">Age</label>
-            <input required id="your_age" type="number">
-            <label for="your_email">E-mail</label>
-            <input required id="your_email" type="email">
-            <label for="your_password">Password</label>
-            <input required id="your_password" type="password">
-            <input type="button" value="Register">
+        <form action="{% url 'gymcloud-register' %}" method="POST">
+            {% csrf_token %}
+            {{form}}
+            <input type="submit" value="Register">
         </form>
     </div>
    

@@ -1,13 +1,9 @@
-from django.shortcuts import render
-
+from django import forms
+from django.shortcuts import render, redirect
+from django.contrib.auth.forms import UserCreationForm
+            
 def home(request):
     return render(request,'home.html')
-
-def login(request):
-    return render(request, 'login.html')
-
-def register(request):
-    return render(request, 'register.html')
 
 def setings(request):
     return render(request, 'setings.html')
