@@ -1,7 +1,0 @@
-python manage.py makemigrations // Quando criar novos modelos
-
-python manage.py migragate // Criar tabelas de dados a partir dos novos modelos
-
-python manage.py runserver // Inicia o servidor
-
-python manage.py startapp //criar novo app
