@@ -3,9 +3,7 @@ from sqlalchemy.orm import Session
 from gymcloud.database import SessionLocal, engine
 from gymcloud import crud, models, schemas
 
-
 models.Base.metadata.create_all(bind=engine)
-
 
 app = FastAPI()
 
@@ -16,7 +14,6 @@ def get_db():
         yield db
     finally:
         db.close()
-        
 
 @app.post("/users/", response_model=schemas.Users)
 def create_user(user: schemas.UsersCreate, db: Session = Depends(get_db)):
